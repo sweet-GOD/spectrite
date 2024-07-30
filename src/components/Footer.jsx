@@ -9,7 +9,7 @@ const Footer = () => {
 
 <footer className="footer border-t bg-base-100 text-base-content text-lg p-10">
   <aside>
-   <img src={require("../asset/logo.jpg")} className='w-72' alt='' />
+   <img src={require("../asset/logo.jpg")} className='w-72 opacity-50' alt='' />
    
   </aside>
   <nav>
