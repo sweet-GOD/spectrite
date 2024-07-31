@@ -1,28 +1,29 @@
 import React from 'react'
-import { FaEnvelope, FaFacebook, FaInbox, FaInstagram, FaLinkedin, FaPhone, FaPhoneAlt, FaYoutube } from "react-icons/fa";
-import { FaLocationDot, FaLocationPin, FaMessage, FaXTwitter } from "react-icons/fa6";
+import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaYoutube } from "react-icons/fa";
+import { FaLocationDot,  FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <div>
 
-<footer className="footer border-t bg-base-100 text-base-content text-lg p-10">
-  <aside>
-   <img src={require("../asset/logo.jpg")} className='w-72 opacity-50' alt='' />
-   
-  </aside>
-  <nav>
-    <a className="link link-hover flex items-center gap-4"><FaLocationDot className='text-green-900' /> 7031 Mt Holly Way, Elkridge, MD 21075</a>
-    <a href='mailto:info@spectriteltd.com' className="link link-hover flex items-center gap-4"><FaEnvelope className='text-green-900' /> info@spectriteltd.com</a>
-  </nav>
-  <nav>
-    <a href="tel:+13015325652" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-green-900' /> +1 301 532 5652</a>
-    <a href="tel:+2348141946580" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-green-900' /> +234 814 194 6580</a>
-    <a href="tel:+2348134020574" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-green-900' /> +234 813 402 0574</a>
-  </nav>
-  
-</footer>
+      <footer className="footer border-t bg-base-100 text-base-content text-lg p-10">
+        <aside>
+          <img src={require("../asset/logo.jpg")} className='w-72 opacity-40 hover:opacity-75 transition ease-out duration-500' alt='' />
+
+        </aside>
+        <nav>
+          
+          <a href='/#' className="link link-hover flex items-center gap-4"><FaLocationDot className='text-green-900' /> 7031 Mt Holly Way, Elkridge, MD 21075</a>
+          <a href='mailto:info@spectriteltd.com' className="link link-hover flex items-center gap-4"><FaEnvelope className='text-green-900' /> info@spectriteltd.com</a>
+        </nav>
+        <nav>
+          <a href="tel:+13015325652" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-green-900' /> +1 301 532 5652</a>
+          <a href="tel:+2348141946580" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-green-900' /> +234 814 194 6580</a>
+          <a href="tel:+2348134020574" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-green-900' /> +234 813 402 0574</a>
+        </nav>
+
+      </footer>
 
       <footer className="footer footer-center bg-green-900 text-white rounded-none p-10">
         <nav>
@@ -39,12 +40,19 @@ const Footer = () => {
               <FaXTwitter size={24} /></Link>
           </div>
         </nav>
-        <nav className="grid grid-flow-col gap-4 lg:gap-10 text-lg">
-          <a className="link link-hover">Home</a>
-          <a className="link link-hover">About</a>
-          <a className="link link-hover">Services</a>
-          <a className="link link-hover">Contact Us</a>
-        </nav>
+        <ul className="grid lg:grid-flow-col lg:px-14 grid-cols-1 gap-4 lg:gap-10 text-lg w-full">
+
+          <li><Link className="link link-hover" to={"/"}>Home</Link></li>
+          <li><Link className="link link-hover" to={"/about"}>About</Link></li>
+          <li><Link className="link link-hover" to={"/agro"}>Agro Allied Services</Link></li>
+
+          <li><Link className="link link-hover" to={"/import-and-export"}>Import and Export</Link></li>
+          <li><Link className="link link-hover" to={"/it-service"}>IT Service Solution Provider</Link></li>
+          <li><Link className="link link-hover" to={"/general-contractor"}>General Contractors</Link></li>
+          <li><Link className="link link-hover" to={"/contact"}>Contact Us</Link></li>
+
+         
+        </ul>
 
       </footer>
 

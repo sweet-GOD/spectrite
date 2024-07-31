@@ -8,6 +8,7 @@ import Agro from "./pages/Agro";
 import ItService from "./pages/ItService";
 import ImportandExport from "./pages/ImportandExport";
 import GeneralContractor from "./pages/GeneralContractor";
+import Contact from "./pages/Contact";
 
 const Layout = () => {
   return (
@@ -27,8 +28,9 @@ const router = createBrowserRouter([
       {path:'/about', element:<About />},
       {path:'/agro', element:<Agro />},
       {path:'/it-service', element:<ItService />},
-      {path:'/import-and-expert', element:<ImportandExport />},
+      {path:'/import-and-export', element:<ImportandExport />},
       {path:'/general-contractor', element:<GeneralContractor />},
+      {path:'/contact', element:<Contact />},
     ]
   }
 ])

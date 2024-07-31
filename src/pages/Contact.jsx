@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 
-const GeneralContractor = () => {
+const Contact = () => {
     useEffect(() => {
         // Scroll to the top when the component mounts
         window.scrollTo(0, 0);
       }, []);
   return (
-    <div>GeneralContractor</div>
+    <div>Contact</div>
   )
 }
 
-export default GeneralContractor
+export default Contact

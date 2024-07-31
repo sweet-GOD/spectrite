@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaChevronRight } from "react-icons/fa";
 import one from "../../asset/agro1.jpg";
 import procure from "../../asset/agro2.jpg";
 import fab from "../../asset/agro3.jpg";
@@ -23,7 +22,7 @@ const Gallery = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div ref={ref} className="flex bg-green-900 rounded-3xl text-white  relative gap-4 lg:gap-10 m-0 lg:px-20 px-4 my-0 overflow-hidden ">
+    <div ref={ref} className="flex bg-green-900 lg:rounded-3xl text-white  relative gap-4 lg:gap-10 m-0 lg:px-20 px-4 my-0 overflow-hidden ">
       <motion.div
         ref={ref}
         variants={{

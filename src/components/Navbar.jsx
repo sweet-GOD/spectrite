@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <div className='border-b fixed top-0 left-0 z-50 w-full bg-[#fff]'>
-            <div className='w-full flex justify-center items-center bg-green-900 text-sm p-2 md:gap-10 text-white'>
+            <div className='w-full flex flex-col md:flex-row md:justify-center md:items-center bg-green-900 text-sm p-2 md:gap-10 text-white text-justify'>
                 <h1 className="flex items-center my-1 gap-2 font-medium">
                     {" "}
                     <FaPhoneAlt />
-                    +1 301-532 5652, +234 814 194 6580
+                    +1 301 532 5652, +234 814 194 6580
                 </h1>
-                <h1 className="flex items-center my-1 gap-2 font-medium">
+                <h1 className="flex items-center my-1 gap-2 font-medium text-justify">
                     {" "}
                     <FaEnvelope />
                     info@spectriteltd.com
@@ -42,11 +42,11 @@ const Navbar = () => {
                             <li><Link to={"/"}>Home</Link></li>
                             <li><Link to={"/about"}>About</Link></li>
                             <li>
-                                <a>Service</a>
+                                <p>Service</p>
                                 <ul className="p-2">
                                 <li><Link to={"/agro"}>Agro Allied Services</Link></li>
 
-<li><Link to={"/import-and-expert"}>Import and Export</Link></li>
+<li><Link to={"/import-and-export"}>Import and Export</Link></li>
 <li><Link to={"/it-service"}>IT Service Solution Provider</Link></li>
 <li><Link to={"/general-contractor"}>General Contractors</Link></li>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
                                 <ul className="p-2 w-80">
                                     <li><Link to={"/agro"}>Agro Allied Services</Link></li>
 
-                                    <li><Link to={"/import-and-expert"}>Import and Export</Link></li>
+                                    <li><Link to={"/import-and-export"}>Import and Export</Link></li>
                                     <li><Link to={"/it-service"}>IT Service Solution Provider</Link></li>
                                     <li><Link to={"/general-contractor"}>General Contractors</Link></li>
                                 </ul>
@@ -80,7 +80,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn btn-outline border-2  text-lg">Contact Us</a>
+                    <Link to={"/contact"} className="btn btn-outline border-2  text-lg">Contact Us</Link>
                 </div>
             </div>
         </div>
