@@ -39,16 +39,17 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
+                            <li><Link to={"/"}>Home</Link></li>
+                            <li><Link to={"/about"}>About</Link></li>
                             <li>
                                 <a>Service</a>
                                 <ul className="p-2">
-                                    <li><a>Agro Allied Services</a></li>
+                                <li><Link to={"/agro"}>Agro Allied Services</Link></li>
 
-                                    <li><a>Import and Export</a></li>
-                                    <li><a>IT Service Solution Provider</a></li>
-                                    <li><a>General Contractors</a></li>
+<li><Link to={"/import-and-expert"}>Import and Export</Link></li>
+<li><Link to={"/it-service"}>IT Service Solution Provider</Link></li>
+<li><Link to={"/general-contractor"}>General Contractors</Link></li>
+
 
                                 </ul>
                             </li>
@@ -61,17 +62,17 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal gap-10 text-lg px-1">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
+                        <li><Link to={"/"}>Home</Link></li>
+                        <li><Link to={"/about"}>About</Link></li>
                         <li>
                             <details>
                                 <summary>Service</summary>
                                 <ul className="p-2 w-80">
-                                    <li><a>Agro Allied Services</a></li>
+                                    <li><Link to={"/agro"}>Agro Allied Services</Link></li>
 
-                                    <li><a>Import and Export</a></li>
-                                    <li><a>IT Service Solution Provider</a></li>
-                                    <li><a>General Contractors</a></li>
+                                    <li><Link to={"/import-and-expert"}>Import and Export</Link></li>
+                                    <li><Link to={"/it-service"}>IT Service Solution Provider</Link></li>
+                                    <li><Link to={"/general-contractor"}>General Contractors</Link></li>
                                 </ul>
                             </details>
                         </li>

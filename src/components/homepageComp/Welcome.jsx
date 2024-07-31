@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const Welcome = () => {
     const ref = useRef(null);
     const isInView = useInView(ref);
-
 
     const mainControls = useAnimation();
 
@@ -56,7 +55,17 @@ const Welcome = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.6, delay: 0.4 }} className="text-lg leading-relaxed">We're passionate about modernizing agriculture. Our team of experts in dedicated to bringing latest technology to farming industry. With years of experience, we're committed to providing best solutions for farmers.</motion.h1>
+                <motion.div ref={ref}
+                variants={{
+                    hidden: { opacity: 0, x: 75 },
+                    visible: { opacity: 1, x: 0 },
+                }}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.6, delay: 0.4 }} >
+
                 <img src={require("../../asset/logo.jpg")} alt="" />
+                </motion.div>
             </div>
         </div>
     )
