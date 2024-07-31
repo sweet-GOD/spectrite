@@ -14,7 +14,7 @@ const Footer = () => {
         </aside>
         <nav>
           
-          <a href='/#' className="link link-hover flex items-center gap-4"><FaLocationDot className='text-green-900' /> 7031 Mt Holly Way, Elkridge, MD 21075</a>
+          <a href='https://maps.app.goo.gl/GTvXHV5t2QQhe2wB9' className="link link-hover flex items-center gap-4"><FaLocationDot className='text-green-900' /> 7031 Mt Holly Way, Elkridge, MD 21075</a>
           <a href='mailto:info@spectriteltd.com' className="link link-hover flex items-center gap-4"><FaEnvelope className='text-green-900' /> info@spectriteltd.com</a>
         </nav>
         <nav>
@@ -56,12 +56,12 @@ const Footer = () => {
 
       </footer>
 
-      <footer className="footer  w-10/12 mx-auto items-center p-6">
-        <aside className="grid-flow-col items-center">
+      <footer className="footer  w-10/12 mx-auto items-center justify-center p-6">
+        <aside className="grid-flow-col items-center text-green-900">
 
           <p>Copyright © {new Date().getFullYear()} - Spectrite Internertional Limited , All right reserved.</p>
         </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <nav className="grid-flow-col hidden gap-4 md:place-self-center md:justify-self-end">
           <p>Website Designed By <span className='font-extrabold'>Onas</span></p>
         </nav>
       </footer>

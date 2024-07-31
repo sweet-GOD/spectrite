@@ -10,8 +10,7 @@ const BreadCrumb = () => {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <Link to={"/it-service"}>IT Service Solution Provider
-              </Link>
+              <Link to={"/agro"}>Contact Us</Link>
             </li>
             
           </ul>
