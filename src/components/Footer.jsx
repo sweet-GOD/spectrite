@@ -57,6 +57,8 @@ const Footer = () => {
       </footer>
 
       <footer className="footer footer-center bg-green-900 text-white rounded-none p-10">
+        
+        <ul className="grid lg:grid-cols-4 lg:px-14 grid-cols-2 gap-4 lg:gap-10 lg:text-lg w-full">
         <nav>
           <div className="grid grid-flow-col gap-4">
             
@@ -67,7 +69,6 @@ const Footer = () => {
               <FaXTwitter size={32} /></Link>
           </div>
         </nav>
-        <ul className="grid lg:grid-flow-col lg:px-14 grid-cols-1 gap-4 lg:gap-10 text-lg w-full">
 
           <li><Link className="link link-hover" to={"/"}>Home</Link></li>
           <li><Link className="link link-hover" to={"/about"}>About</Link></li>
