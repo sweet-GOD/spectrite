@@ -125,10 +125,10 @@ Importance of Import and Export
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify">Economic Growth: International trade contributes significantly to a country’s GDP. Exporting allows businesses to reach wider markets, while importing provides access to necessary goods that might not be produced domestically. <br /><br />
-                Diversification: Import and export activities enable countries to diversify their economic base. For instance, a country rich in minerals can export them and import food products, thus stabilizing its economy. <br /><br />
-                Employment: Trade activities create jobs in various sectors including manufacturing, logistics, shipping, and retail. Export industries, in particular, can drive job creation by expanding production to meet global demand. <br /><br />
-                Consumer Choice: Imports increase the variety of products available to consumers, often at competitive prices. This variety can lead to improved quality of life and increased consumer satisfaction.</motion.h1>
+                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify"><span className="font-bold">Economic Growth:</span> International trade contributes significantly to a country’s GDP. Exporting allows businesses to reach wider markets, while importing provides access to necessary goods that might not be produced domestically. <br /><br />
+                <span className="font-bold">Diversification:</span> Import and export activities enable countries to diversify their economic base. For instance, a country rich in minerals can export them and import food products, thus stabilizing its economy. <br /><br />
+                <span className="font-bold">Employment:</span> Trade activities create jobs in various sectors including manufacturing, logistics, shipping, and retail. Export industries, in particular, can drive job creation by expanding production to meet global demand. <br /><br />
+                <span className="font-bold">Consumer Choice:</span> Imports increase the variety of products available to consumers, often at competitive prices. This variety can lead to improved quality of life and increased consumer satisfaction.</motion.h1>
                 
             </div></div>
             </div>

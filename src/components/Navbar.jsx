@@ -38,17 +38,17 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><Link to={"/"}>Home</Link></li>
-                            <li><Link to={"/about"}>About</Link></li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow w-[95vw] ">
+                            <li><Link className='text-xl' to={"/"}>Home</Link></li>
+                            <li><Link className='text-xl' to={"/about"}>About</Link></li>
+                                <li className='ps-3 text-xl'>Service</li>
                             <li>
-                                <p>Service</p>
                                 <ul className="p-2">
-                                <li><Link to={"/agro"}>Agro Allied Services</Link></li>
+                                <li><Link className='text-xl' to={"/agro"}>Agro Allied Services</Link></li>
 
-<li><Link to={"/import-and-export"}>Import and Export</Link></li>
-<li><Link to={"/it-service"}>IT Service Solution Provider</Link></li>
-<li><Link to={"/general-contractor"}>General Contractors</Link></li>
+<li><Link className='text-xl' to={"/import-and-export"}>Import and Export</Link></li>
+<li><Link className='text-xl' to={"/it-service"}>IT Service Solution Provider</Link></li>
+<li><Link className='text-xl' to={"/general-contractor"}>General Contractors</Link></li>
 
 
                                 </ul>
@@ -80,7 +80,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to={"/contact"} className="btn btn-outline border-2  text-lg">Contact Us</Link>
+                    <Link to={"/contact"} className="btn btn-outline border-2 border-green-900 text-green-900 hover:bg-green-900 transition ease-in-out duration-500 hover:border-green-900 text-lg">Contact Us</Link>
                 </div>
             </div>
         </div>

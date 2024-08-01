@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import CarouselHero from '../components/homepageComp/CarouselHero'
 import Welcome from '../components/homepageComp/Welcome'
 import Gallery from '../components/homepageComp/Gallery'
+import ChooseUs from '../components/homepageComp/ChooseUs'
+import ContactHome from '../components/homepageComp/ContactHome'
 
 const Home = () => {
     useEffect(() => {
@@ -12,7 +14,9 @@ const Home = () => {
     <div className='min-h-screen'>
         <CarouselHero />
         <Welcome />
+        <ChooseUs />
         <Gallery />
+        <ContactHome />
     </div>
   )
 }

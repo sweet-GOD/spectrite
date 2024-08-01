@@ -22,7 +22,7 @@ const Top = () => {
 
   return (
     <div ref={ref}>
-        <div className="relative overflow-hidden bg-blue-950 lg:h-[80vh] h-[60vh] rounded-2xl">
+        <div className="relative overflow-hidden bg-blue-950 lg:h-[80vh] h-[60vh] ">
       <div className="w-full h-full absolute top-0 left-0 bg-[#33333396] "></div>
         <motion.h1
           ref={ref}

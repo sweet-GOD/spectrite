@@ -23,7 +23,7 @@ const Top = () => {
   return (
     <div ref={ref}>
         <div className="relative overflow-hidden bg-blue-950 lg:h-[80vh] h-[60vh] ">
-      <div className="w-full h-full absolute top-0 left-0 bg-[#33333396] hidden"></div>
+      <div className="w-full h-full absolute top-0 left-0 bg-[#33333367] "></div>
         <motion.h1
           ref={ref}
           variants={{
@@ -35,11 +35,11 @@ const Top = () => {
           transition={{ duration: 0.4, delay: 0.4 }}
           className="absolute text-5xl head text-white font-bold transform -translate-y-1/2 top-1/2 lg:left-40 left-12   uppercase"
         >
-          Agro Allied Services
-        </motion.h1>
+About Us
+</motion.h1>
         <img
           className="w-full h-full object-top"
-          src={require("../../asset/agro1.jpg")}
+          src={require("../../asset/slide2.webp")}
           alt=""
         />
       </div>

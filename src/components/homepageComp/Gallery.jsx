@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { Link } from "react-router-dom";
 import one from "../../asset/agro1.jpg";
 import procure from "../../asset/agro2.jpg";
 import fab from "../../asset/agro3.jpg";
@@ -22,7 +21,7 @@ const Gallery = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div ref={ref} className="flex bg-green-900 lg:rounded-3xl text-white  relative gap-4 lg:gap-10 m-0 lg:px-20 px-4 my-0 overflow-hidden ">
+    <div ref={ref} className="flex bg-green-900  text-white  relative gap-4 lg:gap-10 m-0 lg:px-20 px-4 my-0 overflow-hidden ">
       <motion.div
         ref={ref}
         variants={{
@@ -62,7 +61,7 @@ const Gallery = () => {
         <div className="lg:mt-8 mt-10">
           <div className="grid grid-cols-2 md:gap-8 gap-4 lg:grid-cols-3">
             {services.map((item, i) => (
-            <Link to={"/services"}>
+            
               <motion.div
                 ref={ref}
                 variants={{
@@ -83,7 +82,7 @@ const Gallery = () => {
                   <h1>{item.title}</h1>
                 </div>
               </motion.div>
-              </Link>
+              
             ))}
           </div>
         </div>

@@ -30,7 +30,7 @@ const Details = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className=" lg:text-4xl text-4xl  font-bold text-center my-2"
             >
-                IT Service Solution Provider
+                About <br /> SPECTRITE INTERNATIONAL LIMITED
             </motion.h1>
             <img className="w-52 h-10 rotate-180 mt-2 p-0" src={require("../../asset/peanuts.png")} alt="" />
 
@@ -42,10 +42,9 @@ const Details = () => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base text-justify leading-relaxed">Spectrite specializes in transforming comprehensive business ideas into a technical solution to suits customers and stakeholders <br /> <br /> <span className="font-bold">Managed IT Services:</span> Continuous monitoring and management of IT systems, ensuring optimal performance and minimizing downtime. <br /><br /> <span className="font-bold">Cloud Services:</span> Solutions for cloud computing, storage, and migration, enabling businesses to leverage the scalability and flexibility of cloud technologies.
-                <br /><br />
-
-                <span className="font-bold">Cybersecurity:</span> Protection of data and systems from cyber threats through advanced security measures, risk assessments, and incident response.</motion.h1>
+                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base text-justify leading-relaxed">Welcome to Spectrite International Limited, your premier partner in Agro-allied, Import and Export, and IT Solutions. <br /> <br /> With a passion for innovation and excellence, we bridge the gap between agricultural advancements and technology. Our agro-allied division focuses on sustainable farming practices, providing top-quality products to meet the growing global demand.<br /><br /> Our import and export services streamline the international trade process, ensuring efficient and reliable delivery of goods across borders. We connect markets and facilitate smooth transactions, contributing to the global economy.
+                
+</motion.h1>
                 <motion.div ref={ref}
                 variants={{
                     hidden: { opacity: 0, y: 75 },
@@ -55,7 +54,7 @@ const Details = () => {
                 animate={mainControls}
                 transition={{ duration: 0.6, delay: 0.5 }} >
 
-                <img src={require("../../asset/IT_2.jpg")} alt="" />
+                <img src={require("../../asset/slide1.jpg")} className="h-72 w-full" alt="" />
                 </motion.div>
             </div>
             
@@ -79,9 +78,8 @@ const Details = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify">
-                <span className="font-bold">Network Solutions:</span> Design, implementation, and maintenance of robust and reliable network infrastructures.
-                <br /><br />
-                <span className="font-bold">IT Consulting:</span> Expert advice and strategic planning to align technology with business goals, enhancing efficiency and competitiveness.
+                In the realm of IT solutions, we offer cutting-edge technology services tailored to meet the unique needs of businesses. From software development to IT consulting, our team of experts delivers solutions that drive growth and efficiency.
+                
                 </motion.h1>
                 
             </div></div>
@@ -96,13 +94,7 @@ const Details = () => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify">
-
-<span className="font-bold">Software Development:</span> Custom software solutions tailored to meet specific business needs, improving productivity and workflows.
-
-<br />
-<br />
-<span className="font-bold">Technical Support:</span> Responsive and effective technical support to resolve IT issues promptly, ensuring smooth business operations.
+                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify">At Spectrite, we are committed to sustainability, quality, and customer satisfaction. Join us on our journey to create a better, more connected world.
                 </motion.h1>
                 
             </div></div>

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
     const ref = useRef(null);
@@ -40,7 +42,7 @@ const Welcome = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className=" lg:text-4xl text-4xl  font-bold text-center my-2"
+                className=" lg:text-4xl text-4xl text-green-600 font-bold text-center my-2"
             >
                 SPECTRITE INTERNATIONAL LIMITED.
             </motion.h1>
@@ -54,7 +56,8 @@ const Welcome = () => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.6, delay: 0.4 }} className="text-xl leading-relaxed text-justify">We're passionate about modernizing agriculture. Our team of experts in dedicated to bringing latest technology to farming industry. With years of experience, we're committed to providing best solutions for farmers.</motion.h1>
+                transition={{ duration: 0.6, delay: 0.4 }} className="text-xl leading-relaxed text-justify">With a passion for innovation and excellence, we bridge the gap between agricultural advancements and technology. Our agro-allied division focuses on sustainable farming practices, providing top-quality products to meet the growing global demand. <Link to={"/about"} className="text-blue-500 mt-2 btn-sm">Learn more <FaChevronRight className="inline" /> </Link></motion.h1>
+                
                 <motion.div ref={ref}
                 variants={{
                     hidden: { opacity: 0, x: 75 },

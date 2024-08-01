@@ -30,7 +30,7 @@ const Details = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className=" lg:text-4xl text-4xl  font-bold text-center my-2"
             >
-                IT Service Solution Provider
+                General Contractors
             </motion.h1>
             <img className="w-52 h-10 rotate-180 mt-2 p-0" src={require("../../asset/peanuts.png")} alt="" />
 
@@ -42,10 +42,11 @@ const Details = () => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base text-justify leading-relaxed">Spectrite specializes in transforming comprehensive business ideas into a technical solution to suits customers and stakeholders <br /> <br /> <span className="font-bold">Managed IT Services:</span> Continuous monitoring and management of IT systems, ensuring optimal performance and minimizing downtime. <br /><br /> <span className="font-bold">Cloud Services:</span> Solutions for cloud computing, storage, and migration, enabling businesses to leverage the scalability and flexibility of cloud technologies.
-                <br /><br />
+                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base text-justify leading-relaxed">At Spectrite International Limited, we pride ourselves on being your trusted general contractor, delivering exceptional construction services for residential, commercial, and industrial projects. <br /> <br /> With years of experience in the industry, we offer comprehensive solutions from initial planning and design to final construction and project management. Our skilled team is dedicated to ensuring each project is completed on time, within budget, and to the highest standards of quality.
+<br /><br /> <span className="font-bold">We specialize in:</span>
 
-                <span className="font-bold">Cybersecurity:</span> Protection of data and systems from cyber threats through advanced security measures, risk assessments, and incident response.</motion.h1>
+                
+</motion.h1>
                 <motion.div ref={ref}
                 variants={{
                     hidden: { opacity: 0, y: 75 },
@@ -55,7 +56,7 @@ const Details = () => {
                 animate={mainControls}
                 transition={{ duration: 0.6, delay: 0.5 }} >
 
-                <img src={require("../../asset/IT_2.jpg")} alt="" />
+                <img src={require("../../asset/contractor2.jpg")} className="h-72 w-full" alt="" />
                 </motion.div>
             </div>
             
@@ -79,9 +80,9 @@ const Details = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify">
-                <span className="font-bold">Network Solutions:</span> Design, implementation, and maintenance of robust and reliable network infrastructures.
-                <br /><br />
-                <span className="font-bold">IT Consulting:</span> Expert advice and strategic planning to align technology with business goals, enhancing efficiency and competitiveness.
+                <span className="font-bold">Residential Construction:</span> Building dream homes with meticulous attention to detail. <br /><br />
+                <span className="font-bold">Commercial Projects:</span> Constructing functional and aesthetically pleasing commercial spaces.
+                
                 </motion.h1>
                 
             </div></div>
@@ -96,13 +97,8 @@ const Details = () => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify">
-
-<span className="font-bold">Software Development:</span> Custom software solutions tailored to meet specific business needs, improving productivity and workflows.
-
-<br />
-<br />
-<span className="font-bold">Technical Support:</span> Responsive and effective technical support to resolve IT issues promptly, ensuring smooth business operations.
+                transition={{ duration: 0.6, delay: 0.5 }} className="text-xl lg:text-base  leading-relaxed text-justify"><span className="font-bold">Industrial Construction:</span> Developing robust facilities to meet industrial demands. <br /><br />
+Our commitment to excellence, safety, and client satisfaction sets us apart. Let Spectrite turn your vision into reality with unparalleled craftsmanship and professionalism.
                 </motion.h1>
                 
             </div></div>

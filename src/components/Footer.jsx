@@ -1,11 +1,42 @@
-import React from 'react'
-import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaYoutube } from "react-icons/fa";
+import React, { useEffect, useState } from 'react'
+import { FaEnvelope, FaInstagram, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot,  FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import 'animate.css';
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div>
+
+<div
+      className={`fixed bottom-4 right-2 bg-green-600 shadow py-3 px-6 rounded-3xl transition-opacity duration-300 ease-in-out z-30 ${
+        isVisible ? 'opacity-100 animate__animated animate__bounce animate__infinite animate__slower' : 'opacity-0'
+      }`}
+      style={{ visibility: isVisible ? 'visible' : 'hidden' }}
+    >
+      <a href="https://wa.me/2348141946580"  target="_blank" rel="noreferrer" className='flex items-center justify-center gap-2 text-white text-lg'>
+        <FaWhatsapp size={26} /> Chat with me
+      </a>
+    </div>
+
 
       <footer className="footer border-t bg-base-100 text-base-content text-lg p-10">
         <aside>
@@ -28,16 +59,12 @@ const Footer = () => {
       <footer className="footer footer-center bg-green-900 text-white rounded-none p-10">
         <nav>
           <div className="grid grid-flow-col gap-4">
+            
             <Link to={"#"}>
-              <FaFacebook size={24} /></Link>
+              <FaInstagram size={32} /></Link>
+            
             <Link to={"#"}>
-              <FaInstagram size={24} /></Link>
-            <Link to={"#"}>
-              <FaYoutube size={24} /></Link>
-            <Link to={"#"}>
-              <FaLinkedin size={24} /></Link>
-            <Link to={"#"}>
-              <FaXTwitter size={24} /></Link>
+              <FaXTwitter size={32} /></Link>
           </div>
         </nav>
         <ul className="grid lg:grid-flow-col lg:px-14 grid-cols-1 gap-4 lg:gap-10 text-lg w-full">
@@ -56,13 +83,13 @@ const Footer = () => {
 
       </footer>
 
-      <footer className="footer  w-10/12 mx-auto items-center justify-center p-6">
-        <aside className="grid-flow-col items-center text-green-900">
+      <footer className="footer  w-10/12 mx-auto items-center justify-center lg:p-4 p-2">
+        <aside className="grid-flow-col items-center text-center text-green-900">
 
           <p>Copyright © {new Date().getFullYear()} - Spectrite Internertional Limited , All right reserved.</p>
         </aside>
-        <nav className="grid-flow-col hidden gap-4 md:place-self-center md:justify-self-end">
-          <p>Website Designed By <span className='font-extrabold'>Onas</span></p>
+        <nav className="grid-flow-col hidden gap-4 md:place-self-center md:justify-self-end ">
+          <p>Website Designed By <span className='font-extrabold '>Onas</span></p>
         </nav>
       </footer>
     </div>
