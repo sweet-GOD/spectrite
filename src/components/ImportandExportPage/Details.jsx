@@ -28,7 +28,7 @@ const Details = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className=" lg:text-4xl text-4xl  font-bold text-justify my-2"
+                className=" lg:text-4xl text-4xl  font-bold text-justify text-[#0276b6] my-2"
             >
                 Import and Export
 

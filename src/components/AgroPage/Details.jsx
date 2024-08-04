@@ -28,7 +28,7 @@ const Details = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className=" lg:text-4xl text-4xl  font-bold text-center text-green-600 my-2"
+                className=" lg:text-4xl text-4xl  font-bold text-center text-[#0276b6] my-2"
             >
                 Agro Allied Services
 
