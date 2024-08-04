@@ -1,25 +1,31 @@
-import React from 'react'
-import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const location = useLocation();
+
+    const getLinkStyle = (path) => {
+        return location.pathname === path ? 'text-[#0276b6] ' : 'text-black hover:text-[#0276b6] hover:bg-transparent';
+    };
+    const getNavStyle = (path) => {
+        return location.pathname === path ? 'bg-green-600 ' : 'bg-[#0276b6]';
+    };
+
     return (
         <div className='border-b fixed top-0 left-0 z-50 w-full bg-[#fff]'>
-            <div className='w-full flex flex-col md:flex-row md:justify-center md:items-center bg-[#0276b6] text-sm p-2 md:gap-10 text-white text-justify'>
+            <div className={`${getNavStyle('/agro')} w-full flex flex-col md:flex-row md:justify-center md:items-center  text-sm p-2 md:gap-10 text-white text-justify`}>
                 <h1 className="flex items-center my-1 gap-2 font-medium">
-                    {" "}
                     <FaPhoneAlt />
                     +1 301 532 5652, +234 814 194 6580
                 </h1>
                 <h1 className="flex items-center my-1 gap-2 font-medium text-justify">
-                    {" "}
                     <FaEnvelope />
                     info@spectriteltd.com
                 </h1>
             </div>
 
-
-            <div className="navbar  lg:w-11/12 lg:mx-auto">
+            <div className="navbar lg:w-11/12 lg:mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,56 +44,50 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow w-[95vw]  ">
-                            <li><Link className='text-xl' to={"/"}>Home</Link></li>
-                            <li><Link className='text-xl' to={"/about"}>About</Link></li>
-                                <li className='ps-3 text-xl'>Service</li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow w-[95vw]">
+                            <li><Link className={`text-xl ${getLinkStyle("/")}`} to="/">Home</Link></li>
+                            <li><Link className={`text-xl ${getLinkStyle("/about")}`} to="/about">About</Link></li>
+                            <li className='ps-3 text-xl'>Service</li>
                             <li>
                                 <ul className="p-2">
-                                <li><Link className='text-xl' to={"/agro"}>Agro Allied Services</Link></li>
-
-<li><Link className='text-xl' to={"/import-and-export"}>Import and Export</Link></li>
-<li><Link className='text-xl' to={"/it-service"}>IT Service Solution Provider</Link></li>
-<li><Link className='text-xl' to={"/general-contractor"}>General Contractors</Link></li>
-
-
+                                    <li><Link className={`text-xl ${getLinkStyle("/agro")}`} to="/agro">Agro Allied Services</Link></li>
+                                    <li><Link className={`text-xl ${getLinkStyle("/import-and-export")}`} to="/import-and-export">Import and Export</Link></li>
+                                    <li><Link className={`text-xl ${getLinkStyle("/it-service")}`} to="/it-service">IT Service Solution Provider</Link></li>
+                                    <li><Link className={`text-xl ${getLinkStyle("/general-contractor")}`} to="/general-contractor">General Contractors</Link></li>
                                 </ul>
                             </li>
-
                         </ul>
                     </div>
-                    <Link to={"/"} className="btn btn-ghost  hover:bg-transparent text-xl p-0">
+                    <Link to="/" className="btn btn-ghost hover:bg-transparent text-xl p-0">
                         <img src={require("../asset/logo.jpg")} className='h-full border-r-2 pe-4' alt="spectrite-logo" />
                     </Link>
                 </div>
-                <div className="navbar-end hidden lg:flex">
-                    <ul className="menu menu-horizontal gap-10 text-lg px-10 font-bold ">
-                        <li><Link to={"/"}>Home</Link></li>
-                        <li><Link to={"/about"}>About</Link></li>
+                <div className="navbar-end hidden lg:flex w-full">
+                    <ul className="menu menu-horizontal gap-10 text-lg px-10 font-bold">
+                        <li><Link className={getLinkStyle("/")} to="/">Home</Link></li>
+                        <li><Link className={getLinkStyle("/about")} to="/about">About</Link></li>
                         <li>
                             <details>
                                 <summary>Service</summary>
                                 <ul className="p-2 w-80">
-                                    <li><Link to={"/agro"}>Agro Allied Services</Link></li>
-
-                                    <li><Link to={"/import-and-export"}>Import and Export</Link></li>
-                                    <li><Link to={"/it-service"}>IT Service Solution Provider</Link></li>
-                                    <li><Link to={"/general-contractor"}>General Contractors</Link></li>
+                                    <li><Link className={getLinkStyle("/agro")} to="/agro">Agro Allied Services</Link></li>
+                                    <li><Link className={getLinkStyle("/import-and-export")} to="/import-and-export">Import and Export</Link></li>
+                                    <li><Link className={getLinkStyle("/it-service")} to="/it-service">IT Service Solution Provider</Link></li>
+                                    <li><Link className={getLinkStyle("/general-contractor")} to="/general-contractor">General Contractors</Link></li>
                                 </ul>
                             </details>
                         </li>
-
                     </ul>
-                <div className="">
-                    <Link to={"/contact"} className="btn btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
+                    <div className="">
+                        <Link to="/contact" className="btn btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
+                    </div>
                 </div>
-                </div>
-                <div className="md:hidden navbar-end">
-                    <Link to={"/contact"} className="btn btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
+                <div className="lg:hidden navbar-end">
+                    <Link to="/contact" className="btn btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
