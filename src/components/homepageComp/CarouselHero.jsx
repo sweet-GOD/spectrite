@@ -37,7 +37,7 @@ const CarouselHero = () => {
               }}
               initial="hidden"
               animate={mainControls}
-              transition={{ duration: 0.4, delay: 0.4 }} className="lg:text-7xl text-5xl font-extrabold leading-tight text-center text-green-200 z-20 opacity-40 ">Your premier partner in Agro-allied, Import and Export, and IT Solutions</motion.h1>
+              transition={{ duration: 0.4, delay: 0.4 }} className="lg:text-7xl text-5xl font-extrabold leading-tight text-center text-blue-100 z-20  opacity-50 hidden">Your premier partner in Agro-allied, Import and Export, and IT Solutions</motion.h1>
             </div>
         </div>
     );

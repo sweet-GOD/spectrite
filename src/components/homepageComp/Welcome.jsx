@@ -42,7 +42,7 @@ const Welcome = () => {
                 initial="hidden"
                 animate={mainControls}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className=" lg:text-4xl text-4xl text-green-600 font-bold text-center my-2"
+                className=" lg:text-4xl text-4xl text-[#0276b6] font-bold text-center my-2"
             >
                 SPECTRITE INTERNATIONAL LIMITED.
             </motion.h1>

@@ -41,8 +41,8 @@ export const HeroSlider = ({ slides }) => {
         >
             {slides.map((slide, i) => (
                 <SwiperSlide key={i} className="relative ">
-                    <div className="w-full h-full absolute top-0 left-0 bg-[#33333353] "></div>
-                    <img className="h-[70vh] lg:h-[120vh] w-full " src={slide.url} alt="yy" />
+                    <div className="w-full h-full absolute top-0 left-0 bg-[#3333338c] "></div>
+                    <img className="h-[80vh] lg:h-[100vh] w-full " src={slide.url} alt="yy" />
 
                 </SwiperSlide>
             ))}

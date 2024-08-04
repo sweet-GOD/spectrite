@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <div className='border-b fixed top-0 left-0 z-50 w-full bg-[#fff]'>
-            <div className='w-full flex flex-col md:flex-row md:justify-center md:items-center bg-green-900 text-sm p-2 md:gap-10 text-white text-justify'>
+            <div className='w-full flex flex-col md:flex-row md:justify-center md:items-center bg-[#0276b6] text-sm p-2 md:gap-10 text-white text-justify'>
                 <h1 className="flex items-center my-1 gap-2 font-medium">
                     {" "}
                     <FaPhoneAlt />
@@ -38,7 +38,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow w-[95vw] ">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow w-[95vw]  ">
                             <li><Link className='text-xl' to={"/"}>Home</Link></li>
                             <li><Link className='text-xl' to={"/about"}>About</Link></li>
                                 <li className='ps-3 text-xl'>Service</li>
@@ -60,8 +60,8 @@ const Navbar = () => {
                         <img src={require("../asset/logo.jpg")} className='h-full border-r-2 pe-4' alt="spectrite-logo" />
                     </Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal gap-10 text-lg px-1">
+                <div className="navbar-end hidden lg:flex">
+                    <ul className="menu menu-horizontal gap-10 text-lg px-10 font-bold ">
                         <li><Link to={"/"}>Home</Link></li>
                         <li><Link to={"/about"}>About</Link></li>
                         <li>
@@ -78,9 +78,12 @@ const Navbar = () => {
                         </li>
 
                     </ul>
+                <div className="">
+                    <Link to={"/contact"} className="btn btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
                 </div>
-                <div className="navbar-end">
-                    <Link to={"/contact"} className="btn btn-outline border-2 border-green-900 text-green-900 hover:bg-green-900 transition ease-in-out duration-500 hover:border-green-900 text-lg">Contact Us</Link>
+                </div>
+                <div className="md:hidden navbar-end">
+                    <Link to={"/contact"} className="btn btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
                 </div>
             </div>
         </div>

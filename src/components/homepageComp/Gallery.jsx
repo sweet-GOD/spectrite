@@ -21,7 +21,7 @@ const Gallery = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div ref={ref} className="flex bg-green-900  text-white  relative gap-4 lg:gap-10 m-0 lg:px-20 px-4 my-0 overflow-hidden ">
+    <div ref={ref} className="flex   text-[#0276b6]  relative gap-4 lg:gap-10 m-0 lg:px-20 px-4 my-0 overflow-hidden ">
       <motion.div
         ref={ref}
         variants={{

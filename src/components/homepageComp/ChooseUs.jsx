@@ -28,7 +28,7 @@ const ChooseUs = () => {
               }}
               initial="hidden"
               animate={mainControls}
-              transition={{ duration: 0.4, delay: 0.4 }} class="text-3xl font-bold text-center text-green-600 mb-8">Why Choose Us</motion.h2>
+              transition={{ duration: 0.4, delay: 0.4 }} class="text-3xl font-bold text-center text-[#0276b6] mb-8">Why Choose Us</motion.h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       
      
@@ -40,8 +40,8 @@ const ChooseUs = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.6, delay: 0.6 }} class="bg-white shadow-lg rounded-lg text-center flex flex-col items-center p-6">
-      <MdAgriculture className='text-green-600' size={40} />
-        <h3 class="text-2xl font-semibold text-green-600  mb-4">Agro-Allied </h3>
+      <MdAgriculture className='text-[#0276b6]' size={40} />
+        <h3 class="text-2xl font-semibold text-[#0276b6]  mb-4">Agro-Allied </h3>
         <p class="text-gray-700">At Spectrite International Limited, our Agro-Allied division is dedicated to promoting sustainable farming practices. We offer top-quality agricultural products to meet the increasing global demand.</p>
       </motion.div>
       
@@ -54,8 +54,8 @@ const ChooseUs = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.9, delay: 0.9 }} class="bg-white shadow-lg rounded-lg text-center flex flex-col items-center p-6">
-        <GiCommercialAirplane className='text-green-600' size={40} />
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">Import and Export</h3>
+        <GiCommercialAirplane className='text-[#0276b6]' size={40} />
+        <h3 class="text-2xl font-semibold text-[#0276b6] mb-4">Import and Export</h3>
         <p class="text-gray-700">Our Import and Export services streamline international trade, ensuring efficient and reliable delivery of goods across borders. We connect markets and facilitate smooth transactions, contributing to the global economy.</p>
       </motion.div>
       
@@ -68,8 +68,8 @@ const ChooseUs = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 1.2, delay: 1.2 }} class="bg-white shadow-lg rounded-lg text-center flex flex-col items-center p-6">
-        <GrCloudComputer className='text-green-600' size={40} />
-        <h3 class="text-2xl font-semibold text-green-600 mb-4">IT Solutions</h3>
+        <GrCloudComputer className='text-[#0276b6]' size={40} />
+        <h3 class="text-2xl font-semibold text-[#0276b6] mb-4">IT Solutions</h3>
         <p class="text-gray-700">We provide cutting-edge IT solutions tailored to meet the unique needs of businesses. From software development to IT consulting, our experts deliver solutions that drive growth and efficiency.</p>
       </motion.div>
     </div>

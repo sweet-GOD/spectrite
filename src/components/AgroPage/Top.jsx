@@ -33,7 +33,7 @@ const Top = () => {
           initial="hidden"
           animate={mainControls}
           transition={{ duration: 0.4, delay: 0.4 }}
-          className="absolute text-5xl head text-white font-bold transform -translate-y-1/2 top-1/2 lg:left-40 left-12   uppercase"
+          className="absolute text-5xl head  font-bold transform -translate-y-1/2 top-1/2 lg:left-40 left-12  text-green-400 uppercase"
         >
           Agro Allied Services
         </motion.h1>
