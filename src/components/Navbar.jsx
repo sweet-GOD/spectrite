@@ -1,16 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const getLinkStyle = (path) => {
         return location.pathname === path ? 'text-[#0276b6] ' : 'text-black hover:text-[#0276b6] hover:bg-transparent';
     };
 
     return (
-        <div className='border-b fixed top-0 left-0 z-50 w-full bg-[#fff]'>
+        <div className='border-b top-0 left-0 z-50 w-full bg-[#fff]'>
             <div className='w-full flex flex-col md:flex-row md:justify-center md:items-center bg-[#0276b6] text-sm p-2 md:gap-10 text-white text-justify'>
                 <h1 className="flex items-center my-1 gap-2 font-medium">
                     <FaPhoneAlt />
@@ -22,7 +39,7 @@ const Navbar = () => {
                 </h1>
             </div>
 
-            <div className="navbar lg:w-11/12 lg:mx-auto">
+            <div className={`${isScrolled ? 'fixed top-0 left-0 z-50 w-full bg-[#fff] shadow-lg transition-all duration-300 ' : 'relative bg-transparent lg:w-11/12 lg:mx-auto'} navbar `}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
