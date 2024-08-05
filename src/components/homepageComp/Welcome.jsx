@@ -48,7 +48,7 @@ const Welcome = () => {
             </motion.h1>
             <img className="w-52 h-10 rotate-180 mt-2 p-0 mx-auto" src={require("../../asset/peanuts.png")} alt="" />
 
-            <div className="grid md:grid-cols-2 gap-10 lg:w-10/12 mx-auto lg:pt-20 pt-10 text-center md:text-start">
+            <div className="grid lg:grid-cols-2 gap-10 lg:w-10/12 mx-auto lg:pt-20 pt-10 text-center md:text-start">
                 <motion.h1 ref={ref}
                 variants={{
                     hidden: { opacity: 0, x: -75 },

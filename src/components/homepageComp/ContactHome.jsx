@@ -18,7 +18,7 @@ const ContactHome = () => {
   return (
     <section class="bg-gray-50 py-12">
   <div class="container mx-auto px-4 lg:w-10/12">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
       
       <div class="space-y-6 p-2 md:p-0">
         <motion.h2 ref={ref}

@@ -49,7 +49,7 @@ const Footer = () => {
           <a href='mailto:info@spectriteltd.com' className="link link-hover flex items-center gap-4"><FaEnvelope className='text-[#0276b6]' /> info@spectriteltd.com</a>
         </nav>
         <nav>
-          <a href="tel:+13015325652" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-[#0276b6]' /> +1 301 532 5652</a>
+          <a href="tel:+12408016139" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-[#0276b6]' /> +1 240 801 6139</a>
           <a href="tel:+2348141946580" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-[#0276b6]' /> +234 814 194 6580</a>
           <a href="tel:+2348134020574" className="link link-hover flex items-center gap-4"><FaPhoneAlt className='text-[#0276b6]' /> +234 813 402 0574</a>
         </nav>

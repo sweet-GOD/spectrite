@@ -29,7 +29,7 @@ const ChooseUs = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.4, delay: 0.4 }} class="text-3xl font-bold text-center text-[#0276b6] mb-8">Why Choose Us</motion.h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
       
      
       <motion.div ref={ref}

@@ -105,7 +105,7 @@ const Details = () => {
           
           <div className="responsive-map  overflow-hidden">
 
-          <iframe title="m" className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.0446865753383!2d-76.75874112482948!3d39.181255471664855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e175504a1d1d%3A0x91d885ca6ac64350!2s7031%20Mount%20Holly%20Wy%2C%20Elkridge%2C%20MD%2021075%2C%20USA!5e1!3m2!1sen!2sng!4v1722437092321!5m2!1sen!2sng" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="m" className="w-full hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.0446865753383!2d-76.75874112482948!3d39.181255471664855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e175504a1d1d%3A0x91d885ca6ac64350!2s7031%20Mount%20Holly%20Wy%2C%20Elkridge%2C%20MD%2021075%2C%20USA!5e1!3m2!1sen!2sng!4v1722437092321!5m2!1sen!2sng" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
            
           </div>

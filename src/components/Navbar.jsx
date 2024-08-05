@@ -23,7 +23,7 @@ const Navbar = () => {
     }, []);
 
     const getLinkStyle = (path) => {
-        return location.pathname === path ? 'text-[#0276b6] ' : 'text-black hover:text-[#0276b6] hover:bg-transparent';
+        return location.pathname === path ? 'text-[#0276b6] btn bg-transparent hover:bg-transparent shadow-none border-none text-start flex items-start justify-start text-lg lg:items-center' : 'text-black hover:text-[#0276b6] hover:bg-transparent btn bg-transparent shadow-none border-none text-start flex items-start justify-start text-lg lg:items-center ';
     };
 
     return (
@@ -31,7 +31,7 @@ const Navbar = () => {
             <div className='w-full flex flex-col md:flex-row md:justify-center md:items-center bg-[#0276b6] text-sm p-2 md:gap-10 text-white text-justify'>
                 <h1 className="flex items-center my-1 gap-2 font-medium">
                     <FaPhoneAlt />
-                    +1 301 532 5652, +234 814 194 6580
+                    +1 240 801 6139, +234 814 194 6580
                 </h1>
                 <h1 className="flex items-center my-1 gap-2 font-medium text-justify">
                     <FaEnvelope />
@@ -58,12 +58,12 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow w-[95vw]">
-                            <li><Link className={`text-xl ${getLinkStyle("/")}`} to="/">Home</Link></li>
-                            <li><Link className={`text-xl ${getLinkStyle("/about")}`} to="/about">About</Link></li>
-                            <li className='ps-3 text-xl'>Service</li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 p-2 shadow w-[95vw]">
+                            <li><Link className={`text-xl  ${getLinkStyle("/")}`} to="/">Home</Link></li>
+                            <li><Link className={`text-xl  ${getLinkStyle("/about")}`} to="/about">About</Link></li>
+                            <li className='ps-3 text-xl text-gray-400'>Services</li>
                             <li>
-                                <ul className="p-2">
+                                <ul className="p-2 z-50">
                                     <li><Link className={`text-xl ${getLinkStyle("/agro")}`} to="/agro">Agro Allied Services</Link></li>
                                     <li><Link className={`text-xl ${getLinkStyle("/import-and-export")}`} to="/import-and-export">Import and Export</Link></li>
                                     <li><Link className={`text-xl ${getLinkStyle("/it-service")}`} to="/it-service">IT Service Solution Provider</Link></li>
@@ -82,8 +82,8 @@ const Navbar = () => {
                         <li><Link className={getLinkStyle("/about")} to="/about">About</Link></li>
                         <li>
                             <details>
-                                <summary>Service</summary>
-                                <ul className="p-2 w-80">
+                                <summary className='btn bg-transparent shadow-none border-none text-start flex items-start justify-start text-lg lg:items-center hover:bg-transparent'>Service</summary>
+                                <ul className="p-2 w-80 z-50  right-0 rounded-none">
                                     <li><Link className={getLinkStyle("/agro")} to="/agro">Agro Allied Services</Link></li>
                                     <li><Link className={getLinkStyle("/import-and-export")} to="/import-and-export">Import and Export</Link></li>
                                     <li><Link className={getLinkStyle("/it-service")} to="/it-service">IT Service Solution Provider</Link></li>
@@ -93,7 +93,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <div className="">
-                        <Link to="/contact" className="btn btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
+                        <Link to="/contact" className="btn rounded-none btn-outline border-2 border-[#0276b6] text-[#0276b6] hover:bg-[#0276b6] transition ease-in-out duration-500 hover:border-[#0276b6] text-lg">Contact Us</Link>
                     </div>
                 </div>
                 <div className="lg:hidden navbar-end">

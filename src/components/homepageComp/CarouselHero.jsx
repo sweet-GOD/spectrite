@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import one from "../../asset/agro1.jpg";
-import two from "../../asset/slide2.webp";
-import three from "../../asset/slide3.webp";
+import four from "../../asset/import1.jpg";
+import two from "../../asset/IT_1.jpg";
+import three from "../../asset/contractor1.jpg";
 import { HeroSlider } from "./HeroSlider";
 
 
@@ -20,9 +21,10 @@ const CarouselHero = () => {
     }
   }, [isInView, mainControls]);
     const imgs = [
-        { url: one },
-        { url: three },
-        { url: two },
+        { url: one, text: "Agro Allied Services" },
+        { url: four, text: "Import and Export" },
+        { url: two, text: "IT Service Solution" },
+        { url: three, text: "General Contractor" },
 
     ];
 
